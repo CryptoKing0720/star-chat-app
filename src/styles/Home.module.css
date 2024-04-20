@@ -1,0 +1,117 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(99,99,191,.07);
+}
+
+.upsell {
+  background: #6363bf;
+  color: white;
+  text-decoration: none;
+  align-self: center;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 12px;
+  font-weight: 500;
+  margin: 10px 0;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);
+}
+
+.appContent {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.messagesList {
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.messagesMessage {
+  display: flex;
+  margin-top: 10px;
+}
+
+.messagesMessage.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.messagesMessage > .avatar {
+  margin: 0 10px -10px;
+}
+
+.username {
+  color: gray;
+  font-size: 14px;
+}
+
+.messageContent > .username {
+  padding-bottom: 4px;
+}
+
+.messageContent > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: #6363bf;
+  color: white;
+  display: inline-block;
+}
+
+.members {
+  border-bottom: solid #6363bf1c;
+  background: white;
+  padding: 8px;
+}
+
+.membersCount {
+  margin-bottom: 8px;
+}
+
+.membersList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.membersList > .member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.member > .avatar {
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+}
+
+.currentMember > .messageContent .text {
+  background-color: white;
+  border-top-right-radius: 0;
+  color: black;
+}
+
+.typingIndicator {
+  color: gray;
+  font-size: 14px; 
+}
