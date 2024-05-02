@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "@/styles/Home.module.css";
 
+// This code snippet defines a React functional component named Members that takes in two props: members and me.
 export default function Members({ members, me }) {
   return (
     <div className={styles.members}>
