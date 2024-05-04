@@ -16,6 +16,7 @@ export default function Members({ members, me }) {
   );
 }
 
+// This component is designed to render a member item, typically for a list of users or members in a UI.
 function Member({ id, clientData }, isMe) {
   const { username, color } = clientData;
   return (
